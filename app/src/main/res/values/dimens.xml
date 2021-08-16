@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_padding">12dp</dimen>
+    <dimen name="seperator_view_height">2dp</dimen>
+    <dimen name="item_margin_top_s">12dp</dimen>
+    <dimen name="item_margin_top_m">16dp</dimen>
+    <dimen name="button_text_size">16sp</dimen>
+    <dimen name="result_text_size">20sp</dimen>
+    <dimen name="coordinate_image_height">300dp</dimen>
+    <dimen name="coordinate_image_margin_top">8dp</dimen>
+</resources>

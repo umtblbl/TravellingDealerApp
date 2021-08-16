@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Travelling Dealer App</string>
+    <string name="list_is_empty">List is Empty!</string>
+    <string name="add_nodes_to_list">Add nodes to list</string>
+    <string name="delete_nodes_from_list">Delete nodes from list</string>
+    <string name="total_length">Total Length:</string>
 </resources>

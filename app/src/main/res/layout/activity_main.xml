@@ -6,13 +6,64 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <ImageView
+        android:id="@+id/coordinateImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/coordinate_image_height"
+        android:layout_marginTop="@dimen/coordinate_image_margin_top"
+        android:src="@drawable/coordinate_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addNotesButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="@dimen/item_margin_top_m"
+        android:padding="@dimen/button_padding"
+        android:text="@string/add_nodes_to_list"
+        android:textAllCaps="false"
+        android:textSize="@dimen/button_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/coordinateImageView" />
+
+    <Button
+        android:id="@+id/deleteNodesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_margin_top_m"
+        android:padding="@dimen/button_padding"
+        android:text="@string/delete_nodes_from_list"
+        android:textAllCaps="false"
+        android:textSize="@dimen/button_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addNotesButton" />
+
+    <View
+        android:id="@+id/seperatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/seperator_view_height"
+        android:layout_marginTop="@dimen/item_margin_top_s"
+        android:background="@color/purple_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/deleteNodesButton" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_margin_top_s"
+        android:gravity="center"
+        android:text="@string/list_is_empty"
+        android:textColor="@color/purple_700"
+        android:textSize="@dimen/result_text_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seperatorView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
